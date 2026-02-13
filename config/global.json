@@ -1,0 +1,18 @@
+﻿{
+  "project": {
+    "name": "codex-agent-workflow-template",
+    "domain": "chess-and-card-platform",
+    "version": "1.0.0"
+  },
+  "orchestration": {
+    "entry_agent": "commander",
+    "max_iteration": 10,
+    "retry_on_failure": true
+  },
+  "quality_gate": {
+    "min_experience_score": 9.5,
+    "required_consecutive_checks": 3,
+    "min_unit_coverage": 0.8,
+    "max_p95_latency_ms": 200
+  }
+}

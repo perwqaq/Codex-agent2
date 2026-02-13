@@ -1,0 +1,13 @@
+﻿{
+    "agent_id":  "frontend-engineer",
+    "local_skill":  "skills/frontend-engineer/SKILL.md",
+    "supporting_skills":  [
+                              "react-architecture",
+                              "state-management",
+                              "websocket-integration"
+                          ],
+    "optional_external_sources":  [
+                                      "https://github.com/openai/skills",
+                                      "https://skills.sh/"
+                                  ]
+}

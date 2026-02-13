@@ -1,0 +1,13 @@
+﻿{
+    "agent_id":  "qa-engineer",
+    "local_skill":  "skills/qa-engineer/SKILL.md",
+    "supporting_skills":  [
+                              "test-strategy",
+                              "automation-suite",
+                              "performance-regression"
+                          ],
+    "optional_external_sources":  [
+                                      "https://github.com/openai/skills",
+                                      "https://skills.sh/"
+                                  ]
+}

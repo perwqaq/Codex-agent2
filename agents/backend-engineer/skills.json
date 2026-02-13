@@ -1,0 +1,13 @@
+﻿{
+    "agent_id":  "backend-engineer",
+    "local_skill":  "skills/backend-engineer/SKILL.md",
+    "supporting_skills":  [
+                              "api-design",
+                              "db-modeling",
+                              "auth-security"
+                          ],
+    "optional_external_sources":  [
+                                      "https://github.com/openai/skills",
+                                      "https://skills.sh/"
+                                  ]
+}

@@ -1,0 +1,79 @@
+﻿{
+  "version": "1.0.0",
+  "name": "codex-multi-agent-collaboration",
+  "description": "Nine-agent workflow for chess/card game platform delivery",
+  "agents": [
+    "commander",
+    "product-manager",
+    "ui-ux-designer",
+    "frontend-engineer",
+    "backend-engineer",
+    "game-logic",
+    "qa-engineer",
+    "devops-security",
+    "data-analyst"
+  ],
+  "stages": [
+    {
+      "id": "requirement-discovery",
+      "owner": "product-manager",
+      "depends_on": [],
+      "outputs": ["docs/PRD.md", "docs/backlog.md"]
+    },
+    {
+      "id": "experience-design",
+      "owner": "ui-ux-designer",
+      "depends_on": ["requirement-discovery"],
+      "outputs": ["design/wireframes.md", "design/ui-spec.md"]
+    },
+    {
+      "id": "data-instrumentation-plan",
+      "owner": "data-analyst",
+      "depends_on": ["requirement-discovery"],
+      "outputs": ["docs/event-dictionary.md", "docs/kpi-model.md"]
+    },
+    {
+      "id": "implementation",
+      "parallel": true,
+      "depends_on": ["experience-design", "data-instrumentation-plan"],
+      "tracks": [
+        {
+          "owner": "frontend-engineer",
+          "outputs": ["src/frontend/", "docs/frontend-api-contract.md"]
+        },
+        {
+          "owner": "backend-engineer",
+          "outputs": ["src/backend/", "docs/backend-api-contract.md"]
+        },
+        {
+          "owner": "game-logic",
+          "outputs": ["src/game-logic/", "docs/game-rules-spec.md"]
+        }
+      ]
+    },
+    {
+      "id": "quality-assurance",
+      "owner": "qa-engineer",
+      "depends_on": ["implementation"],
+      "outputs": ["validation/test-report.md", "validation/bug-list.md"]
+    },
+    {
+      "id": "release-security",
+      "owner": "devops-security",
+      "depends_on": ["quality-assurance"],
+      "outputs": ["deploy/pipeline.md", "validation/security-report.md"]
+    },
+    {
+      "id": "acceptance-gate",
+      "owner": "commander",
+      "depends_on": ["release-security"],
+      "outputs": ["validation/acceptance-report.md"],
+      "gate": {
+        "min_experience_score": 9.5,
+        "required_consecutive_checks": 3,
+        "min_unit_coverage": 0.8,
+        "max_p95_latency_ms": 200
+      }
+    }
+  ]
+}

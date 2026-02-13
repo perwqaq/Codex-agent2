@@ -1,0 +1,13 @@
+﻿{
+    "agent_id":  "data-analyst",
+    "local_skill":  "skills/data-analyst/SKILL.md",
+    "supporting_skills":  [
+                              "event-tracking",
+                              "funnel-analysis",
+                              "risk-detection"
+                          ],
+    "optional_external_sources":  [
+                                      "https://github.com/openai/skills",
+                                      "https://skills.sh/"
+                                  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+    "agent_id":  "devops-security",
+    "local_skill":  "skills/devops-security/SKILL.md",
+    "supporting_skills":  [
+                              "cicd-pipeline",
+                              "container-hardening",
+                              "runtime-observability"
+                          ],
+    "optional_external_sources":  [
+                                      "https://github.com/openai/skills",
+                                      "https://skills.sh/"
+                                  ]
+}

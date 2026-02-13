@@ -1,0 +1,13 @@
+﻿{
+    "agent_id":  "game-logic",
+    "local_skill":  "skills/game-logic/SKILL.md",
+    "supporting_skills":  [
+                              "rule-engine",
+                              "matchmaking",
+                              "scoring-system"
+                          ],
+    "optional_external_sources":  [
+                                      "https://github.com/openai/skills",
+                                      "https://skills.sh/"
+                                  ]
+}

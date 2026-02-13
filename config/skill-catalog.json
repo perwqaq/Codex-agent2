@@ -1,0 +1,36 @@
+﻿{
+  "source_policy": {
+    "allow_custom_skills": true,
+    "allow_github_skills": true,
+    "allow_skills_sh": true
+  },
+  "skills": [
+    {"id": "planning-orchestration", "source": "custom", "used_by": ["commander"]},
+    {"id": "quality-gate", "source": "custom", "used_by": ["commander", "qa-engineer"]},
+    {"id": "delivery-check", "source": "custom", "used_by": ["commander"]},
+    {"id": "prd-authoring", "source": "custom", "used_by": ["product-manager"]},
+    {"id": "roadmap-planning", "source": "custom", "used_by": ["product-manager"]},
+    {"id": "competitive-analysis", "source": "custom", "used_by": ["product-manager"]},
+    {"id": "design-system", "source": "custom", "used_by": ["ui-ux-designer"]},
+    {"id": "interaction-spec", "source": "custom", "used_by": ["ui-ux-designer"]},
+    {"id": "prototype-review", "source": "custom", "used_by": ["ui-ux-designer"]},
+    {"id": "react-architecture", "source": "custom", "used_by": ["frontend-engineer"]},
+    {"id": "state-management", "source": "custom", "used_by": ["frontend-engineer"]},
+    {"id": "websocket-integration", "source": "custom", "used_by": ["frontend-engineer"]},
+    {"id": "api-design", "source": "custom", "used_by": ["backend-engineer"]},
+    {"id": "db-modeling", "source": "custom", "used_by": ["backend-engineer"]},
+    {"id": "auth-security", "source": "custom", "used_by": ["backend-engineer"]},
+    {"id": "rule-engine", "source": "custom", "used_by": ["game-logic"]},
+    {"id": "matchmaking", "source": "custom", "used_by": ["game-logic"]},
+    {"id": "scoring-system", "source": "custom", "used_by": ["game-logic"]},
+    {"id": "test-strategy", "source": "custom", "used_by": ["qa-engineer"]},
+    {"id": "automation-suite", "source": "custom", "used_by": ["qa-engineer"]},
+    {"id": "performance-regression", "source": "custom", "used_by": ["qa-engineer"]},
+    {"id": "cicd-pipeline", "source": "custom", "used_by": ["devops-security"]},
+    {"id": "container-hardening", "source": "custom", "used_by": ["devops-security"]},
+    {"id": "runtime-observability", "source": "custom", "used_by": ["devops-security"]},
+    {"id": "event-tracking", "source": "custom", "used_by": ["data-analyst"]},
+    {"id": "funnel-analysis", "source": "custom", "used_by": ["data-analyst"]},
+    {"id": "risk-detection", "source": "custom", "used_by": ["data-analyst"]}
+  ]
+}

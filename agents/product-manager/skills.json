@@ -1,0 +1,13 @@
+﻿{
+    "agent_id":  "product-manager",
+    "local_skill":  "skills/product-manager/SKILL.md",
+    "supporting_skills":  [
+                              "prd-authoring",
+                              "roadmap-planning",
+                              "competitive-analysis"
+                          ],
+    "optional_external_sources":  [
+                                      "https://github.com/openai/skills",
+                                      "https://skills.sh/"
+                                  ]
+}

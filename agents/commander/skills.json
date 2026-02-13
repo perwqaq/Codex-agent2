@@ -1,0 +1,13 @@
+﻿{
+    "agent_id":  "commander",
+    "local_skill":  "skills/commander/SKILL.md",
+    "supporting_skills":  [
+                              "planning-orchestration",
+                              "quality-gate",
+                              "delivery-check"
+                          ],
+    "optional_external_sources":  [
+                                      "https://github.com/openai/skills",
+                                      "https://skills.sh/"
+                                  ]
+}

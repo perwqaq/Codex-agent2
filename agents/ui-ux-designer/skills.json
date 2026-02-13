@@ -1,0 +1,13 @@
+﻿{
+    "agent_id":  "ui-ux-designer",
+    "local_skill":  "skills/ui-ux-designer/SKILL.md",
+    "supporting_skills":  [
+                              "design-system",
+                              "interaction-spec",
+                              "prototype-review"
+                          ],
+    "optional_external_sources":  [
+                                      "https://github.com/openai/skills",
+                                      "https://skills.sh/"
+                                  ]
+}
