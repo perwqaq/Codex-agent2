@@ -49,6 +49,41 @@ npx -y github:perwqaq/Codex-agent2 codex-agent-workflow-install
 npm run install:local
 ```
 
+## 如何触发工作流
+
+### 1) 触发总流程（推荐）
+
+```text
+开始项目
+```
+
+或
+
+```text
+@commander 开始项目：开发一个棋牌类游戏大厅+对局+结算
+```
+
+### 2) 按角色单独触发
+
+- Commander：`开始项目`、`质量验收`、`检查交付`
+- Product Manager：`写PRD`、`分析需求`、`产品规划`
+- UI/UX Designer：`设计界面`、`出设计规范`、`做UI`
+- Frontend Engineer：`写前端`、`React组件`、`WebSocket`
+- Backend Engineer：`写后端`、`API开发`、`数据库设计`
+- Game Logic：`写游戏逻辑`、`游戏规则`、`房间管理`
+- QA Engineer：`写测试`、`测试用例`、`性能测试`
+- DevOps/Security：`CI/CD`、`部署`、`安全审计`
+
+### 3) 触发验收
+
+```text
+@commander 质量验收
+```
+
+验收依据：
+- `workflow/validation-flow.json`
+- `validation/scoring-criteria.md`
+
 ## 测试与验证
 
 ```powershell
