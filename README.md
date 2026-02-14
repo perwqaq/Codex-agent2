@@ -1,6 +1,6 @@
-﻿# Codex 多智能体协同工作流（9 Agents）
+﻿# 多 IDE 多智能体协同工作流（9 Agents）
 
-本仓库基于 `perwqaq/Codex-agent` 的目录理念重建，提供适用于 Codex 的可测试协同工作流。
+本仓库基于 `perwqaq/Codex-agent` 的目录理念重建，提供适用于 `Codex`、`Trae`、`Cursor` 的可测试协同工作流。
 
 ## Agents
 
@@ -33,21 +33,64 @@
   - https://github.com/openai/skills
   - https://skills.sh/
 
-## npm 一键安装
+## 多 IDE 一键安装（npm）
+
+默认安装到 `Codex`：
 
 ```powershell
 npx -y github:perwqaq/Codex-agent2 codex-agent-workflow-install
 ```
 
-默认安装到：
-- Windows: `%USERPROFILE%\\.codex\\skills\\codex-agent-workflow`
-- macOS/Linux: `~/.codex/skills/codex-agent-workflow`
+指定安装到其他 IDE：
+
+```powershell
+# 安装到 Trae
+npx -y github:perwqaq/Codex-agent2 codex-agent-workflow-install --ide trae
+
+# 安装到 Cursor
+npx -y github:perwqaq/Codex-agent2 codex-agent-workflow-install --ide cursor
+
+# 同时安装到 Codex + Trae + Cursor
+npx -y github:perwqaq/Codex-agent2 codex-agent-workflow-install --ide all
+```
+
+默认目录：
+- Codex: `%USERPROFILE%\\.codex\\skills\\codex-agent-workflow`
+- Trae: `%USERPROFILE%\\.trae\\skills\\codex-agent-workflow`
+- Cursor: `%USERPROFILE%\\.cursor\\skills\\codex-agent-workflow`
+
+自定义目录：
+
+```powershell
+npx -y github:perwqaq/Codex-agent2 codex-agent-workflow-install --dest "D:\\skills\\codex-agent-workflow"
+```
 
 可本地测试安装器：
 
 ```powershell
 npm run install:local
+npm run install:trae
+npm run install:cursor
+npm run install:all
 ```
+
+## Trae 使用说明
+
+1. 安装技能包到 Trae：
+```powershell
+npx -y github:perwqaq/Codex-agent2 codex-agent-workflow-install --ide trae
+```
+2. 重启 Trae，确保加载新的 skills。
+3. 在 Trae 对话中直接使用触发词：
+- `开始项目`
+- `@commander 开始项目：开发一个棋牌类游戏大厅+对局+结算`
+- `@commander 质量验收`
+
+## 多 IDE 触发规则
+
+- `Codex`、`Trae`、`Cursor` 使用同一套触发词。
+- 触发顺序一致：`commander` 总控调度，子 Agent 分阶段执行。
+- 验收标准一致：`workflow/validation-flow.json` + `validation/scoring-criteria.md`。
 
 ## 如何触发工作流
 

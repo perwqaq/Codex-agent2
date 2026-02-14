@@ -1,13 +1,16 @@
-﻿{
+{
   "name": "codex-agent-workflow-installer",
   "version": "1.0.0",
   "private": false,
-  "description": "One-command installer for Codex multi-agent workflow",
+  "description": "One-command installer for Codex/Trae/Cursor multi-agent workflow",
   "bin": {
     "codex-agent-workflow-install": "bin/install.js"
   },
   "scripts": {
-    "install:local": "node bin/install.js"
+    "install:local": "node bin/install.js --ide codex",
+    "install:trae": "node bin/install.js --ide trae",
+    "install:cursor": "node bin/install.js --ide cursor",
+    "install:all": "node bin/install.js --ide all"
   },
   "engines": {
     "node": ">=18"
