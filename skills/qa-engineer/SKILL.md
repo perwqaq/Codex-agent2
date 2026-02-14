@@ -1,4 +1,4 @@
-﻿---
+---
 name: "qa-engineer"
 description: "测试工程师Agent，负责测试策略、自动化回归和质量报告。触发：写测试、测试用例、自动化测试。"
 triggers:

@@ -1,4 +1,4 @@
-﻿---
+---
 name: "commander"
 description: "总指挥Agent，负责多智能体调度、质量门禁和交付决策。触发：开始项目、质量验收、检查交付。"
 triggers:

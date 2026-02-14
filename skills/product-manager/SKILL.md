@@ -1,4 +1,4 @@
-﻿---
+---
 name: "product-manager"
 description: "产品经理Agent，负责需求分析、PRD和迭代规划。触发：写PRD、分析需求、产品规划。"
 triggers:

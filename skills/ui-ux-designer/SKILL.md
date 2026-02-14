@@ -1,4 +1,4 @@
-﻿---
+---
 name: "ui-ux-designer"
 description: "UI/UX设计师Agent，负责界面、交互和设计规范。触发：设计界面、做UI、出设计规范。"
 triggers:

@@ -1,4 +1,4 @@
-﻿---
+---
 name: "game-logic"
 description: "游戏逻辑工程师Agent，负责规则引擎、房间管理和结算。触发：写游戏逻辑、游戏规则、房间管理。"
 triggers:

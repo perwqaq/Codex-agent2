@@ -1,4 +1,4 @@
-﻿---
+---
 name: "backend-engineer"
 description: "后端工程师Agent，负责API、数据库、认证和服务稳定性。触发：写后端、API开发、数据库设计。"
 triggers:

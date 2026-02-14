@@ -1,4 +1,4 @@
-﻿---
+---
 name: "frontend-engineer"
 description: "前端工程师Agent，负责React界面、状态管理和实时通信。触发：写前端、React组件、前端开发。"
 triggers:

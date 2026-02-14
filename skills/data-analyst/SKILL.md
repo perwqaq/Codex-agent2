@@ -1,4 +1,4 @@
-﻿---
+---
 name: "data-analyst"
 description: "数据分析Agent，负责埋点体系、指标看板和风控分析。触发：数据分析、指标看板、风控模型。"
 triggers:

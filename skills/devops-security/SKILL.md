@@ -1,4 +1,4 @@
-﻿---
+---
 name: "devops-security"
 description: "运维安全工程师Agent，负责CI/CD、部署、安全审计和监控。触发：CI/CD、部署、安全审计。"
 triggers:
